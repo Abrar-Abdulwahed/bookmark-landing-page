@@ -377,23 +377,24 @@
                     <div class="flex flex-col md:flex-row justify-center gap-4">
                         <div class="rounded p-[2px]" id="input-validation">
                             <div class="rounded bg-white">
-                                <label for="email"></label>
-                                <input
-                                    type="text"
-                                    id="email"
-                                    class="outline-0 px-4 h-10 bg-transparent caret-softRed text-veryDarkBlue"
-                                    placeholder="Enter your email address"
-                                    aria-required="true"
-                                    aria-invalid="false"
-                                    aria-describedby=""
-                                >
-                                <img
-                                    src="./assets/images/icon-error.svg"
-                                    id="error-img"
-                                    alt=""
-                                    aria-hidden="true"
-                                    class="mr-2 hidden"
-                                >
+                                <label for="email">
+                                    <input
+                                        type="text"
+                                        id="email"
+                                        class="outline-0 px-4 h-10 bg-transparent caret-softRed text-veryDarkBlue"
+                                        placeholder="Enter your email address"
+                                        aria-required="true"
+                                        aria-invalid="false"
+                                        aria-describedby=""
+                                    >
+                                    <img
+                                        src="./assets/images/icon-error.svg"
+                                        id="error-img"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="mr-2 hidden"
+                                    >
+                                </label>
                             </div>
                             <p class="italic text-sm hidden" id="error-msg" aria-live="assertive">
                                 Whoops, make sure it's an email
