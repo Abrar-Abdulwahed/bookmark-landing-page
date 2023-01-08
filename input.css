@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-    width: clamp(200px, 80vw, 250vw);
+    width: clamp(200px, 70vw, 250vw);
 }
 
 .hero-section.has-shape::before {
@@ -174,10 +174,14 @@
 }
 
 @media only screen and (min-width: 64em) {
+    .hero-img {
+        max-width: 32.5rem;
+    }
+
     .hero-section.has-shape::before {
-        height: 19rem;
-        width: 30%;
-        top: 9rem;
+        height: 20rem;
+        width: 35%;
+        top: 10rem;
     }
 
     .tabs-section .has-shape::before {
@@ -185,5 +189,12 @@
         width: 75%;
         left: -40%;
         top: 6rem;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .hero-img {
+        margin-left: 4.375rem;
+        max-width: 36.25rem;
     }
 }

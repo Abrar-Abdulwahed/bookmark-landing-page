@@ -791,6 +791,14 @@ a:hover path {
   left: -24rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -875,6 +883,10 @@ a:hover path {
   width: 75%;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
@@ -885,6 +897,11 @@ a:hover path {
 
 .basis-1\/2 {
   flex-basis: 50%;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1154,7 +1171,7 @@ a:hover path {
 }
 
 .container {
-  width: clamp(200px, 80vw, 250vw);
+  width: clamp(200px, 70vw, 250vw);
 }
 
 .hero-section.has-shape::before {
@@ -1219,10 +1236,14 @@ a:hover path {
 }
 
 @media only screen and (min-width: 64em) {
+  .hero-img {
+    max-width: 32.5rem;
+  }
+
   .hero-section.has-shape::before {
-    height: 19rem;
-    width: 30%;
-    top: 9rem;
+    height: 20rem;
+    width: 35%;
+    top: 10rem;
   }
 
   .tabs-section .has-shape::before {
@@ -1230,6 +1251,13 @@ a:hover path {
     width: 75%;
     left: -40%;
     top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .hero-img {
+    margin-left: 4.375rem;
+    max-width: 36.25rem;
   }
 }
 
@@ -1312,10 +1340,6 @@ a:hover path {
 }
 
 @media (min-width: 640px) {
-  .sm\:max-w-md {
-    max-width: 28rem;
-  }
-
   .sm\:max-w-sm {
     max-width: 24rem;
   }
@@ -1350,10 +1374,6 @@ a:hover path {
 
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:max-w-\[31rem\] {
-    max-width: 31rem;
   }
 
   .md\:max-w-screen-md {
@@ -1403,12 +1423,12 @@ a:hover path {
     order: 1;
   }
 
-  .lg\:ml-auto {
-    margin-left: auto;
+  .lg\:-ml-20 {
+    margin-left: -5rem;
   }
 
-  .lg\:-mr-24 {
-    margin-right: -6rem;
+  .lg\:mr-20 {
+    margin-right: 5rem;
   }
 
   .lg\:mt-16 {
@@ -1454,5 +1474,15 @@ a:hover path {
 
   .lg\:leading-8 {
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:-ml-10 {
+    margin-left: -2.5rem;
+  }
+
+  .xl\:mr-8 {
+    margin-right: 2rem;
   }
 }
