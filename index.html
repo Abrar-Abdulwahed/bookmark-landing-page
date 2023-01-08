@@ -117,26 +117,26 @@
                     >
                 </div>
                 <div class="text-center lg:text-start lg:mr-20 xl:mr-8">
-                    <h1 class="text-5xl font-medium">A Simple Bookmark Manager</h1>
+                    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-medium">A Simple Bookmark Manager</h1>
                     <p class="text-grayishBlue my-5">
                         A clean and simple interface to organize your favourite websites. Open a new 
                               browser tab and see your sites load instantly. Try it for free.
                     </p>
-                    <div class="flex justify-center lg:justify-start space-x-5">
-                        <button class="btn-lg btn-primary py-2 px-6">Get it on Chrome</button>
+                    <div class="flex flex-col justify-center sm:flex-row lg:justify-start sm:space-x-5">
+                        <button class="btn-lg btn-primary py-2 px-6 mb-6 sm:mb-0">Get it on Chrome</button>
                         <button class="shadow-md shadow-grayishBlue btn-lg btn-secondary py-2 px-6">Get it on Firefox</button>
                     </div>
                 </div>
             </div>
-            <section class="text-center py-20">
+            <section class="container mx-auto text-center py-20">
                 <div class="mb-14">
-                    <h2 class="h2-title">Features</h2>
-                    <p class="h2-desc">
+                    <h2 class="h2-title text-3xl lg:text-4xl">Features</h2>
+                    <p class="h2-desc lg:w-5/12">
                         Our aim is to make it quick and easy for you to access your favourite websites. 
                               Your bookmarks sync between your devices so you can access them on the go.
                     </p>
                 </div>
-                <div class="container tabs-section mx-auto">
+                <div class="tabs-section">
                     <div role="tablist" class="tabs mb-10 grid md:grid-cols-3 md:max-w-screen-md mx-auto text-center text-grayishBlue">
                         <button
                             class="tab active-tab"
@@ -218,7 +218,7 @@
                             <div class="pic basis-1/2">
                                 <img
                                     src="./assets/images/illustration-features-tab-3.svg"
-                                    class="max-w-sm md:max-w-md"
+                                    class="max-w-[15rem] md:max-w-md"
                                     alt=""
                                     aria-hidden="true"
                                 >
@@ -235,129 +235,125 @@
                     </div>
                 </div>
             </section>
-            <section class="text-center py-20">
-                <div class="container mx-auto">
-                    <div class="mb-10">
-                        <h2 class="h2-title">Download the extension</h2>
-                        <p class="h2-desc">
-                            We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+            <section class="container mx-auto text-center py-20">
+                <div class="mb-10">
+                    <h2 class="h2-title text-3xl lg:text-4xl">Download the extension</h2>
+                    <p class="h2-desc lg:w-5/12">
+                        We’ve got more browsers in the pipeline. Please do let us know if you’ve 
                             got a favourite you’d like us to prioritize.
-                        </p>
+                    </p>
+                </div>
+                <div class="extensions mx-auto flex flex-col flex-wrap md:flex-row justify-center gap-8">
+                    <div class="extenstion-item">
+                        <img src="./assets/images/logo-chrome.svg" class="inline-block my-3" alt="Chrome logo">
+                        <h3 class="text-lg font-medium py-2">Add to Chrome</h3>
+                        <p class="text-grayishBlue mb-12">Minimum version 62</p>
+                        <button class="btn-lg btn-primary" aria-label="Add & Install chrome extension">
+                            <span aria-hidden="true">Add & Install Extension</span>
+                        </button>
                     </div>
-                    <div class="extensions mx-auto flex flex-col flex-wrap md:flex-row justify-center gap-8">
-                        <div class="extenstion-item">
-                            <img src="./assets/images/logo-chrome.svg" class="inline-block my-3" alt="Chrome logo">
-                            <h3 class="text-lg font-medium py-2">Add to Chrome</h3>
-                            <p class="text-grayishBlue mb-12">Minimum version 62</p>
-                            <button class="btn-lg btn-primary" aria-label="Add & Install chrome extension">
-                                <span aria-hidden="true">Add & Install Extension</span>
-                            </button>
-                        </div>
-                        <div class="extenstion-item lg:mt-16">
-                            <img src="./assets/images/logo-firefox.svg" class="inline-block my-3" alt="Firefox logo">
-                            <h3 class="text-lg font-medium py-2">Add to Firefox</h3>
-                            <p class="text-grayishBlue mb-12">Minimum version 55</p>
-                            <button class="btn-lg btn-primary" aria-label="Add & Install firefox extension">
-                                <span aria-hidden="true">Add & Install Extension</span>
-                            </button>
-                        </div>
-                        <div class="extenstion-item lg:mt-32">
-                            <img src="./assets/images/logo-opera.svg" class="inline-block my-3" alt="Opera logo">
-                            <h3 class="text-lg font-medium py-2">Add to Opera</h3>
-                            <p class="text-grayishBlue mb-12">Minimum version 46</p>
-                            <button class="btn-lg btn-primary" aria-label="Add & Install opera extension">
-                                <span aria-hidden="true">Add & Install Extension</span>
-                            </button>
-                        </div>
+                    <div class="extenstion-item lg:mt-16">
+                        <img src="./assets/images/logo-firefox.svg" class="inline-block my-3" alt="Firefox logo">
+                        <h3 class="text-lg font-medium py-2">Add to Firefox</h3>
+                        <p class="text-grayishBlue mb-12">Minimum version 55</p>
+                        <button class="btn-lg btn-primary" aria-label="Add & Install firefox extension">
+                            <span aria-hidden="true">Add & Install Extension</span>
+                        </button>
+                    </div>
+                    <div class="extenstion-item lg:mt-32">
+                        <img src="./assets/images/logo-opera.svg" class="inline-block my-3" alt="Opera logo">
+                        <h3 class="text-lg font-medium py-2">Add to Opera</h3>
+                        <p class="text-grayishBlue mb-12">Minimum version 46</p>
+                        <button class="btn-lg btn-primary" aria-label="Add & Install opera extension">
+                            <span aria-hidden="true">Add & Install Extension</span>
+                        </button>
                     </div>
                 </div>
             </section>
-            <section id="fqa" class="text-center py-20">
-                <div class="container mx-auto">
-                    <div class="mb-14">
-                        <h2 class="h2-title">Frequently Asked Questions</h2>
-                        <p class="h2-desc">
-                            Here are some of our FAQs. If you have any other questions you’d like 
+            <section id="fqa" class="container mx-auto text-center py-20">
+                <div class="mb-14">
+                    <h2 class="h2-title text-3xl lg:text-4xl">Frequently Asked Questions</h2>
+                    <p class="h2-desc lg:w-5/12">
+                        Here are some of our FAQs. If you have any other questions you’d like 
                                 answered please feel free to email us.
-                        </p>
-                    </div>
-                    <div class="accordion-section md:w-2/3 mx-auto">
-                        <div class="group accordion-item" tabindex="0">
-                            <div class="flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
-                                <div class="group-hover:text-softRed transition ease-in duration-500">
-                                    What is Bookmark?
-                                </div>
-                                <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
-                                    <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
-                                </div>
+                    </p>
+                </div>
+                <div class="accordion-section md:w-2/3 mx-auto">
+                    <div class="group accordion-item" tabindex="0">
+                        <div class="flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
+                            <div class="group-hover:text-softRed transition ease-in duration-500">
+                                What is Bookmark?
                             </div>
-                            <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
-                                <p class="text-grayishBlue">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                                                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-                                </p>
+                            <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
+                                <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
                             </div>
                         </div>
-                        <div class="group accordion-item" tabindex="0">
-                            <div class="group flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
-                                <div class="group-hover:text-softRed transition ease-in duration-500">
-                                    How can I request a new browser?
-                                </div>
-                                <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
-                                    <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
-                                </div>
+                        <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
+                            <p class="text-grayishBlue">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                                                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="group accordion-item" tabindex="0">
+                        <div class="group flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
+                            <div class="group-hover:text-softRed transition ease-in duration-500">
+                                How can I request a new browser?
                             </div>
-                            <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
-                                <p class="text-grayishBlue">
-                                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                            <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
+                                <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                        <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
+                            <p class="text-grayishBlue">
+                                Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
                                             Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                                             ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
                                             Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-                                </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="group accordion-item" tabindex="0">
+                        <div class="group flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
+                            <div class="group-hover:text-softRed transition ease-in duration-500">
+                                Is there a mobile app?
+                            </div>
+                            <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
+                                <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
                             </div>
                         </div>
-                        <div class="group accordion-item" tabindex="0">
-                            <div class="group flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
-                                <div class="group-hover:text-softRed transition ease-in duration-500">
-                                    Is there a mobile app?
-                                </div>
-                                <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
-                                    <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
-                                </div>
-                            </div>
-                            <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
-                                <p class="text-grayishBlue">
-                                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                        <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
+                            <p class="text-grayishBlue">
+                                Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
                                             urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
                                             sollicitudin ex et ultricies bibendum.
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                        <div class="group accordion-item" tabindex="0">
-                            <div class="group flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
-                                <div class="group-hover:text-softRed transition ease-in duration-500">
-                                    What about other Chromium browsers?
-                                </div>
-                                <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
-                                    <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
-                                </div>
-                            </div>
-                            <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
-                                <p class="text-grayishBlue">
-                                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-                                      vitae neque eget nisl gravida pellentesque non ut velit.
-                                </p>
-                            </div>
-                        </div>
-                        <button class="btn-md hidden lg:block bg-softBlue text-white mx-auto mt-12">More Info</button>
                     </div>
+                    <div class="group accordion-item" tabindex="0">
+                        <div class="group flex justify-between group-focus:pb-0 py-6 items-center text-veryDarkBlue cursor-pointer relative">
+                            <div class="group-hover:text-softRed transition ease-in duration-500">
+                                What about other Chromium browsers?
+                            </div>
+                            <div class="transition ease-in duration-200 group-focus:-rotate-180 mr-2">
+                                <img src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
+                            </div>
+                        </div>
+                        <div class="group-focus:max-h-screen max-h-0 group-focus:py-8 overflow-hidden ease-in duration-500">
+                            <p class="text-grayishBlue">
+                                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                                      vitae neque eget nisl gravida pellentesque non ut velit.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn-md hidden lg:block bg-softBlue text-white mx-auto mt-12">More Info</button>
                 </div>
             </section>
             <section class="text-center mx-auto py-20 bg-softBlue text-white">
                 <div class="container mx-auto">
                     <span class="block uppercase tracking-widest">35,000+ already joined</span>
                     <h3 class="text-3xl font-medium my-8 text-center mx-auto lg:w-1/3">Stay up-to-date with what we’re doing</h3>
-                    <form id="contact-form" class="flex flex-col md:flex-row justify-center gap-4" novalidate>
+                    <!-- <form id="contact-form" class="flex flex-col md:flex-row justify-center gap-4" novalidate>
                         <div class="rounded p-[2px]" id="input-validation">
                             <div class="rounded bg-white relative">
                                 <label for="email" class="sr-only">Enter your email address</label>
@@ -382,7 +378,7 @@
                             </p>
                         </div>
                         <button type="submit" class="btn-md h-10 md:self-start rounded border-2 border-transparent bg-softRed text-white hover:bg-white hover:text-softRed hover:border-softRed">Contact Us</button>
-                    </form>
+                    </form> -->
                 </div>
             </section>
         </main>
