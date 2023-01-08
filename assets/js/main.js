@@ -23,7 +23,7 @@ let mobileMenu = () =>{
     toggle.addEventListener("click", () => {
         menu.classList.toggle("navigation-mobile");
         menu.classList.toggle("hidden");
-        menu.getAttribute("aria-expanded") ==="false"?menu.setAttribute("aria-expanded", "true"):menu.setAttribute("aria-expanded", "false");
+        toggle.getAttribute("aria-expanded") ==="false"?toggle.setAttribute("aria-expanded", "true"):toggle.setAttribute("aria-expanded", "false");
         document.querySelector('#mobile-toggle .humburger-icon').classList.toggle('hidden');
         document.querySelector('#mobile-toggle .close-icon').classList.toggle('hidden');
         logo.classList.toggle("logo-white");

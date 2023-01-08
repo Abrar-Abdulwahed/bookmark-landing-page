@@ -582,8 +582,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-/* top-56 h-36 */
-
 .has-shape::before {
   position: absolute;
   z-index: -10;
@@ -690,18 +688,18 @@ a:hover path {
   fill: hsl(0, 94%, 66%);
 }
 
-.menu-items ul {
+.menu-items {
   display: flex;
   align-items: center;
 }
 
-.menu-items ul > :not([hidden]) ~ :not([hidden]) {
+.menu-items > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.menu-items ul {
+.menu-items {
   text-transform: uppercase;
 }
 
@@ -719,8 +717,9 @@ a:hover path {
     flex-direction: column;
     --tw-bg-opacity: 1;
     background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-top: 7rem;
     text-align: center;
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -737,30 +736,9 @@ a:hover path {
     transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   }
 
-  .menu-items.navigation-mobile ul {
-    margin-top: 7rem;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .menu-items.navigation-mobile ul > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-  }
-
-  .menu-items.navigation-mobile ul~a {
+  .menu-items.navigation-mobile li {
     margin-left: 0px !important;
     margin-right: 0px !important;
-    margin-top: 1.5rem;
-    width: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .menu-items.navigation-mobile ul li {
-    margin: 0px !important;
     width: 100%;
     border-top-width: 1px;
     --tw-border-opacity: 1;
@@ -769,10 +747,8 @@ a:hover path {
     padding-bottom: 1.75rem;
   }
 
-  .menu-items.navigation-mobile ul li:last-child {
-    width: 100%;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+  .menu-items.navigation-mobile li:last-child {
+    border-width: 0px;
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
@@ -839,8 +815,8 @@ a:hover path {
   margin-bottom: 2rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mt-auto {
+  margin-top: auto;
 }
 
 .mb-14 {
@@ -889,6 +865,10 @@ a:hover path {
 
 .max-h-0 {
   max-height: 0px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-3\/4 {

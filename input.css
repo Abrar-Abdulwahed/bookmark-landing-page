@@ -55,7 +55,6 @@
         @apply relative overflow-hidden shadow-md p-5 rounded-xl self-center
     }
 
-    /* top-56 h-36 */
     .has-shape::before {
         @apply content-[''] absolute bg-softBlue -z-10;
     }
@@ -112,29 +111,21 @@
         @apply fill-softRed
     }
 
-    .menu-items ul {
+    .menu-items {
         @apply flex items-center uppercase space-x-12
     }
 
     @media only screen and (max-width: 768px) {
         .menu-items.navigation-mobile {
-            @apply px-20 fixed z-10 top-0 right-0 w-full h-full translate-y-0 transition-all ease-in duration-500 bg-veryDarkBlue opacity-90 text-center flex flex-col drop-shadow-md text-white text-xl uppercase tracking-[.4em]
+            @apply px-11 fixed z-10 top-0 right-0 w-full h-full pt-28 translate-y-0 transition-all ease-in duration-500 bg-veryDarkBlue opacity-90 text-center flex flex-col drop-shadow-md text-white text-xl uppercase tracking-[.4em]
         }
 
-        .menu-items.navigation-mobile ul {
-            @apply flex flex-col mt-28 space-y-6 w-full;
+        .menu-items.navigation-mobile li {
+            @apply border-t border-gray-50 py-7 w-full !mx-0
         }
 
-        .menu-items.navigation-mobile ul~a {
-            @apply w-full mt-6 !mx-0 py-2
-        }
-
-        .menu-items.navigation-mobile ul li {
-            @apply border-t border-gray-50 py-7 w-full !m-0
-        }
-
-        .menu-items.navigation-mobile ul li:last-child {
-            @apply border-y py-7 w-full
+        .menu-items.navigation-mobile li:last-child {
+            @apply border-0 py-7
         }
 
         .logo.logo-white path {
