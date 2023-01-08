@@ -86,12 +86,12 @@
                     <li role="menuitem">
                         <a href="#">Contact</a>
                     </li>
-                    <li>
+                    <li role="menuitem">
                         <a href="#" class="w-full block md:mt-0 md:w-fit btn-md md:px-7 md:py-1 md:bg-softRed text-white uppercase border-2 hover:bg-white  hover:border-softRed">
                             Login
                         </a>
                     </li>
-                    <li class="flex md:hidden mt-auto space-x-4 justify-center items-center">
+                    <li role="menuitem" class="flex md:hidden mt-auto space-x-4 justify-center items-center">
                         <a href="#" class="facebook" aria-label="Visit our facebook page">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                                 <path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
@@ -136,108 +136,106 @@
                               Your bookmarks sync between your devices so you can access them on the go.
                     </p>
                 </div>
-                <div class="tabs-section">
-                    <div class="container mx-auto">
-                        <div class="tabs mb-10 grid md:grid-cols-3 md:max-w-screen-md mx-auto text-center text-grayishBlue" role="tablist">
-                            <button
-                                class="tab active-tab"
-                                id="bookmarking-tab"
-                                role="tab"
-                                aria-posinset="1"
-                                aria-setsize="3"
-                                aria-selected="true"
-                                aria-controls="bookmarking"
-                            >Simple Bookmarking</button>
-                            <button
-                                class="tab"
-                                id="searching-tab"
-                                role="tab"
-                                aria-posinset="2"
-                                aria-setsize="3"
-                                aria-selected="false"
-                                aria-controls="searching"
-                            >Speedy Searching</button>
-                            <button
-                                class="tab"
-                                id="sharing-tab"
-                                role="tab"
-                                aria-posinset="3"
-                                aria-setsize="3"
-                                aria-selected="false"
-                                aria-controls="sharing"
-                            >Easy Sharing</button>
-                        </div>
-                        <div id="tabcontents" class="has-shape relative lg:px-12">
-                            <div
-                                class="tabcontent flex flex-col gap-14 lg:flex-row items-center lg:justify-between text-center lg:text-start"
-                                id="bookmarking"
-                                role="tabpanel"
-                                aria-hidden="false"
-                                aria-labelledby="bookmarking-tab"
-                            >
-                                <div class="basis-1/4">
-                                    <img
-                                        src="./assets/images/illustration-features-tab-1.svg"
-                                        class="sm:max-w-sm md:max-w-md"
-                                        alt=""
-                                        aria-hidden="true"
-                                    >
-                                </div>
-                                <div class="desc basis-1/2">
-                                    <h3 class="h3-title">Bookmark in one click</h3>
-                                    <p class="w-3/4 my-5 mx-auto md:mx-0">
-                                        Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                <div class="container tabs-section mx-auto">
+                    <ul role="tablist" class="tabs mb-10 grid md:grid-cols-3 md:max-w-screen-md mx-auto text-center text-grayishBlue">
+                        <li
+                            class="tab active-tab"
+                            id="bookmarking-tab"
+                            role="tab"
+                            aria-posinset="1"
+                            aria-setsize="3"
+                            aria-selected="true"
+                            aria-controls="bookmarking"
+                        >Simple Bookmarking</li>
+                        <li
+                            class="tab"
+                            id="searching-tab"
+                            role="tab"
+                            aria-posinset="2"
+                            aria-setsize="3"
+                            aria-selected="false"
+                            aria-controls="searching"
+                        >Speedy Searching</li>
+                        <li
+                            class="tab"
+                            id="sharing-tab"
+                            role="tab"
+                            aria-posinset="3"
+                            aria-setsize="3"
+                            aria-selected="false"
+                            aria-controls="sharing"
+                        >Easy Sharing</li>
+                    </ul>
+                    <div id="tabcontents" class="has-shape relative lg:px-12">
+                        <div
+                            class="tabcontent flex flex-col gap-14 lg:flex-row items-center lg:justify-between text-center lg:text-start"
+                            id="bookmarking"
+                            role="tabpanel"
+                            aria-hidden="false"
+                            aria-labelledby="bookmarking-tab"
+                        >
+                            <div class="basis-1/4">
+                                <img
+                                    src="./assets/images/illustration-features-tab-1.svg"
+                                    class="sm:max-w-sm md:max-w-md"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+                            <div class="desc basis-1/2">
+                                <h3 class="h3-title">Bookmark in one click</h3>
+                                <p class="w-3/4 my-5 mx-auto md:mx-0">
+                                    Organize your bookmarks however you like. Our simple drag-and-drop interface 
                                             gives you complete control over how you manage your favourite sites.
-                                    </p>
-                                    <button class="btn-md hidden lg:block bg-softBlue text-white">More Info</button>
-                                </div>
+                                </p>
+                                <button class="btn-md hidden lg:block bg-softBlue text-white">More Info</button>
                             </div>
-                            <div
-                                class="tabcontent hidden flex-col gap-14 lg:flex-row items-center lg:justify-between text-center lg:text-start"
-                                id="searching"
-                                role="tabpanel"
-                                aria-hidden="true"
-                                aria-labelledby="searching-tab"
-                            >
-                                <div class="pic basis-1/2">
-                                    <img
-                                        src="./assets/images/illustration-features-tab-2.svg"
-                                        class="sm:max-w-sm md:max-w-md"
-                                        alt=""
-                                        aria-hidden="true"
-                                    >
-                                </div>
-                                <div class="desc basis-1/2">
-                                    <h3 class="h3-title">Intelligent search</h3>
-                                    <p class="w-3/4 my-5 mx-auto md:mx-0">
-                                        Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
-                                    </p>
-                                    <button class="btn-md hidden lg:block bg-softBlue text-white">More Info</button>
-                                </div>
+                        </div>
+                        <div
+                            class="tabcontent hidden flex-col gap-14 lg:flex-row items-center lg:justify-between text-center lg:text-start"
+                            id="searching"
+                            role="tabpanel"
+                            aria-hidden="true"
+                            aria-labelledby="searching-tab"
+                        >
+                            <div class="pic basis-1/2">
+                                <img
+                                    src="./assets/images/illustration-features-tab-2.svg"
+                                    class="sm:max-w-sm md:max-w-md"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
                             </div>
-                            <div
-                                class="tabcontent hidden flex-col gap-14 lg:flex-row items-center lg:justify-between text-center lg:text-start"
-                                id="sharing"
-                                role="tabpanel"
-                                aria-hidden="true"
-                                aria-labelledby="sharing-tab"
-                            >
-                                <div class="pic basis-1/2">
-                                    <img
-                                        src="./assets/images/illustration-features-tab-3.svg"
-                                        class="max-w-sm md:max-w-md"
-                                        alt=""
-                                        aria-hidden="true"
-                                    >
-                                </div>
-                                <div class="desc basis-1/2">
-                                    <h3 class="h3-title">Share your bookmarks</h3>
-                                    <p class="w-3/4 my-5 mx-auto md:mx-0">
-                                        Easily share your bookmarks and collections with others. Create a shareable 
+                            <div class="desc basis-1/2">
+                                <h3 class="h3-title">Intelligent search</h3>
+                                <p class="w-3/4 my-5 mx-auto md:mx-0">
+                                    Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+                                </p>
+                                <button class="btn-md hidden lg:block bg-softBlue text-white">More Info</button>
+                            </div>
+                        </div>
+                        <div
+                            class="tabcontent hidden flex-col gap-14 lg:flex-row items-center lg:justify-between text-center lg:text-start"
+                            id="sharing"
+                            role="tabpanel"
+                            aria-hidden="true"
+                            aria-labelledby="sharing-tab"
+                        >
+                            <div class="pic basis-1/2">
+                                <img
+                                    src="./assets/images/illustration-features-tab-3.svg"
+                                    class="max-w-sm md:max-w-md"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+                            <div class="desc basis-1/2">
+                                <h3 class="h3-title">Share your bookmarks</h3>
+                                <p class="w-3/4 my-5 mx-auto md:mx-0">
+                                    Easily share your bookmarks and collections with others. Create a shareable 
                                         link that you can send at the click of a button.
-                                    </p>
-                                    <button class="btn-md hidden lg:block bg-softBlue text-white">More Info</button>
-                                </div>
+                                </p>
+                                <button class="btn-md hidden lg:block bg-softBlue text-white">More Info</button>
                             </div>
                         </div>
                     </div>
