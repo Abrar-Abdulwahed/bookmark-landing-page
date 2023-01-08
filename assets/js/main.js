@@ -4,7 +4,17 @@ const validRegExp = /\S+@\S+\.\S+/;
 const error_msg = document.getElementById("error-msg");
 const email_input = document.getElementById("email");
 const error_img = document.getElementById("error-img");
+const skip_btn = document.getElementById("skip-btn");
 
+skip_btn.addEventListener('focusin', () => {
+    skip_btn.classList.remove("absolute");
+    skip_btn.classList.add("static");
+})
+
+skip_btn.addEventListener('focusout', () => {
+    skip_btn.classList.remove("static");
+    skip_btn.classList.add("absolute");
+})
 
 let mobileMenu = () =>{
     const toggle = document.querySelector("#mobile-toggle");
