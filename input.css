@@ -152,29 +152,14 @@
 
 @media only screen and (min-width: 22em) {
     .hero-section.has-shape::before {
-        height: 10rem;
-        width: 70%;
+        height: clamp(10rem, 27vh, 212vh);
+        width: clamp(60%, 70%, 200%);
         top: 7rem;
     }
 
     .tabs-section .has-shape::before {
-        height: 12rem;
-        width: 150%;
-        left: -70%;
-        top: 2rem;
-    }
-}
-
-@media only screen and (min-width: 24.5em) {
-    .hero-section.has-shape::before {
-        height: 16rem;
-        width: 70%;
-        top: 7rem;
-    }
-
-    .tabs-section .has-shape::before {
-        height: 15rem;
-        width: 150%;
+        height: clamp(10rem, 32vh, 212vh);
+        width: clamp(150%, 165%, 200%);
         left: -70%;
         top: 2rem;
     }
@@ -182,14 +167,14 @@
 
 @media only screen and (min-width: 37.5em) {
     .hero-section.has-shape::before {
-        height: 18rem;
-        width: 50%;
-        top: 9rem;
+        height: clamp(17rem, 40vh, 212vh);
+        width: clamp(30%, 60%, 96%);
+        top: 10rem;
     }
 
     .tabs-section .has-shape::before {
-        height: 18rem;
-        width: 90%;
+        height: clamp(17rem, 42vh, 212vh);
+        width: clamp(90%, 95%, 96%);
         left: -40%;
         top: 5rem;
     }
@@ -201,14 +186,14 @@
     }
 
     .hero-section.has-shape::before {
-        height: 20rem;
-        width: 35%;
+        height: clamp(20rem, 42vh, 212vh);
+        width: clamp(20%, 35%, 94%);
         top: 10rem;
     }
 
     .tabs-section .has-shape::before {
-        height: 19rem;
-        width: 75%;
+        height: clamp(17rem, 45vh, 212vh);
+        width: clamp(10%, 71%, 94%);
         left: -40%;
         top: 6rem;
     }
